@@ -1,0 +1,28 @@
+const express = require("express");
+
+const fs = require("fs");
+const app = express();
+
+app.use(express.urlencoded())
+
+app.get('/getpassword',(req,res)=>{
+    const password = fs.readFileSync("./pass.txt","utf8")
+
+    return res.status(200).json({password:password})
+})
+
+app.post('/updatepassword',(req,res)=>{
+    
+    fs.writeFileSync("./pass.txt",req.body.password,"utf8");
+
+    return res.sendStatus(200);
+})
+
+const port = 8000;
+app.listen(port,(err)=>{
+    if(err){
+        console.log("Error in starting server",err);
+        return;
+    }
+    console.log("Server is up and running at port: ",port);
+})
