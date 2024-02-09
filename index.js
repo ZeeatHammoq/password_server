@@ -5,6 +5,11 @@ const app = express();
 
 app.use(express.urlencoded())
 
+app.get('/',(req,res)=>{
+    
+    return res.end("server is running");
+})
+
 app.get('/getpassword',(req,res)=>{
     const password = fs.readFileSync("./pass.txt","utf8")
 
