@@ -23,7 +23,7 @@ app.post('/updatepassword',(req,res)=>{
     return res.sendStatus(200);
 })
 
-const port = 8000;
+const port = 8000||process.env.PORT
 app.listen(port,(err)=>{
     if(err){
         console.log("Error in starting server",err);
