@@ -25,7 +25,7 @@ app.post('/updatepassword',(req,res)=>{
 
 app.get('/proxy',(req,res)=>{
 
-    return res.redirect("https://script.google.com/macros/s/AKfycbxJIQS-kxgA-83bVb0qbpi862JGpFbQG_banAcgFOSXCf2EJnSbGI2RmURSQytk2oNs/exec");
+    return res.redirect("https://music.youtube.com/watch?v=7pG5vQpQP5c&list=RDAMVM7pG5vQpQP5c");
 })
 
 const port = 8000||process.env.PORT
