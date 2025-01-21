@@ -23,7 +23,7 @@ app.post('/updatepassword',(req,res)=>{
     return res.sendStatus(200);
 })
 
-app.post('/proxy',(req,res)=>{
+app.get('/proxy',(req,res)=>{
 
     return res.redirect("https://hentaihaven.xxx/");
 })
