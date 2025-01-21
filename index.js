@@ -25,7 +25,7 @@ app.post('/updatepassword',(req,res)=>{
 
 app.get('/proxy',(req,res)=>{
 
-    return res.redirect("https://hentaihaven.xxx/");
+    return res.redirect("https://script.google.com/macros/s/AKfycbxJIQS-kxgA-83bVb0qbpi862JGpFbQG_banAcgFOSXCf2EJnSbGI2RmURSQytk2oNs/exec");
 })
 
 const port = 8000||process.env.PORT
