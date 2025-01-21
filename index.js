@@ -23,6 +23,11 @@ app.post('/updatepassword',(req,res)=>{
     return res.sendStatus(200);
 })
 
+app.post('/proxy',(req,res)=>{
+
+    return res.redirect("https://hentaihaven.xxx/");
+})
+
 const port = 8000||process.env.PORT
 app.listen(port,(err)=>{
     if(err){
